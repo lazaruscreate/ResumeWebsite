@@ -4,5 +4,6 @@ The purpose of this website is for anyone who's curious about me, my skills, and
 For all who read this, thanks!
 
 ### Technologies Used: ###
+AWS
 HTML
 CSS
