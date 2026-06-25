@@ -17,11 +17,9 @@ function Nav() {
   return (
     <nav className="nav">
       <div className="nav-inner">
-        <span className="nav-brand">MXA</span>
         <div className="nav-links">
           <a href="https://www.linkedin.com/in/mikexanderson/" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/lazaruscreate" target="_blank" rel="noopener">GitHub</a>
-          <a href="/api/resume" target="_blank" rel="noopener" className="nav-resume">Resume ↗</a>
           <a href="mailto:23michael.anderson@gmail.com" className="nav-cta">Contact</a>
         </div>
       </div>
@@ -219,7 +217,6 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <span>Michael X. Anderson &copy; 2026</span>
         <div className="footer-links">
           <a href="https://www.linkedin.com/in/mikexanderson/" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/lazaruscreate" target="_blank" rel="noopener">GitHub</a>
