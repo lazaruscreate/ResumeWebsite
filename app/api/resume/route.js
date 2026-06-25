@@ -4,15 +4,7 @@ import { NextResponse } from 'next/server'
 
 // In production on Amplify, credentials come from the service role automatically.
 // For local dev, set AWS_ACCESS_KEY_ID + AWS_SECRET_ACCESS_KEY in .env.local.
-const s3 = new S3Client({
-  region: process.env.AWS_REGION ?? 'us-east-1',
-  ...(process.env.AWS_ACCESS_KEY_ID && {
-    credentials: {
-      accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    },
-  }),
-})
+const s3 = new S3Client({ region: 'us-east-1' })
 
 export async function GET() {
   const bucket = process.env.RESUME_BUCKET
