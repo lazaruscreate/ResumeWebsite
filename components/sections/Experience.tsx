@@ -11,7 +11,7 @@ const experiences = [
       'Engineered AI-powered troubleshooting tools using Claude (Anthropic) by authoring custom skill prompts and knowledge-base workflows, reducing resolution time on recurring issues and enabling faster, consistent responses at scale.',
       'Executed large-scale data migrations using advanced Excel and Google Sheets to transform, clean, and restructure tens of thousands of rows of financial and operational data for ingestion into production systems.',
     ],
-    tech: ['Intercom', 'Claude AI', 'Codat', 'QuickBooks', 'Xero', 'RBAC', 'Google Sheets'],
+    tech: ['Intercom', 'SQL', 'Codat', 'QuickBooks', 'Xero', 'RBAC', 'Google Sheets', 'Excel', 'Data Ingestion'],
   },
   {
     dateRange: 'Oct 2023 — May 2024',
@@ -35,7 +35,7 @@ const experiences = [
       'Designed and implemented a critical Java backend process that ingested and transformed over 50 TB of CSVs for daily and yearly validation jobs, developing rate validation methods to prevent catastrophic failures in both the codebase and customer-facing website.',
       'Developed intricate SQL queries against AWS Redshift for data analysis and reporting, and managed an internal Java resource tracking tool supporting a site dedicated to monitoring and evaluating internal spending performance.',
     ],
-    tech: ['Java', 'Scala', 'DynamoDB', 'AWS Redshift', 'SQL', 'AWS'],
+    tech: ['Java', 'Scala', 'DynamoDB', 'AWS Redshift', 'SQL', 'AWS', 'SDLC'],
   },
   {
     dateRange: 'Jan 2018 — Jan 2022',
@@ -47,7 +47,7 @@ const experiences = [
       'Demonstrated exceptional troubleshooting skills resolving radio and radar system issues, achieving 100% operational readiness and ensuring continuous operation of aircraft avionics systems — including the handling and loading of secret cryptographic keys for multinational operations.',
       'Provided comprehensive training to a team of over 30 personnel on Communications and Navigation principles, classified material handling, and maintenance discipline.',
     ],
-    tech: ['Python', 'Avionics', 'Cryptography', 'Systems Maintenance', 'Training'],
+    tech: ['Avionics', 'Python', 'Cryptography', 'Soldering', 'Technical Writing', 'Systems Maintenance'],
   },
 ]
 
