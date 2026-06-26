@@ -5,7 +5,7 @@ export default function About() {
       <h2 className="mb-6 text-sm font-bold uppercase tracking-widest text-slate-200 lg:hidden">
         About
       </h2>
-      <div className="space-y-4 text-sm leading-relaxed text-slate-400">
+      <div className="space-y-4 text-base leading-relaxed text-slate-400">
         <p>
           I&apos;m a tech professional and Air Force veteran who has spent over 8 years finding ways
           to make complex systems work better. I&apos;ve maintained avionics systems for Combat

@@ -5,3 +5,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='224' height='400'%3E%3Cpath d='M112 264L0 200L0 64L112 0L224 64L224 200L112 264L112 400M0 64L0 -80L112 -144L224 -80M224 200L336 264L448 200' fill='none' stroke='%23ffffff' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
+  background-size: 224px 400px;
+}

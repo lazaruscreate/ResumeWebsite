@@ -44,7 +44,7 @@ export default function Projects() {
                 </svg>
               </a>
             </h3>
-            <p className="mt-2 text-sm leading-relaxed text-slate-400">{project.description}</p>
+            <p className="mt-2 text-base leading-relaxed text-slate-400">{project.description}</p>
             <ul className="mt-4 flex flex-wrap gap-2">
               {project.tech.map((t) => (
                 <li

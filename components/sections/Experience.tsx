@@ -77,7 +77,7 @@ export default function Experience() {
                   </svg>
                 </a>
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-400">{job.description}</p>
+              <p className="mt-2 text-base leading-relaxed text-slate-400">{job.description}</p>
               <ul className="mt-3 flex flex-wrap gap-2">
                 {job.tech.map((t) => (
                   <li
