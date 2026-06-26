@@ -17,8 +17,8 @@ export default function About() {
         <p>
           I genuinely enjoy learning new tools and stacks, and I put the same care into a quick
           script as I do into a major system design. I hold a B.S. in Computer Science and a minor in Data Science
-          along with AWS and CompTIA certifications, and  I&apos;m currently working toward
-          CCNA as my next focus area.
+          along with AWS and CompTIA certifications, and  I&apos;m currently working towards my Cisco
+          CCNA certification as my next focus area.
         </p>
       </div>
     </div>
