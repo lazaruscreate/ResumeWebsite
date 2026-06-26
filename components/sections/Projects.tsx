@@ -1,12 +1,25 @@
 const projects = [
   {
+    title: 'MungerFirebase',
+    description:
+      'React chat app backed by a Firebase Cloud Function that proxies messages to Google\'s PaLM language model. Includes a CI/CD pipeline via GitHub Actions for automatic Firebase Hosting deployments on merge.',
+    tech: ['React', 'Firebase', 'Cloud Functions', 'Google PaLM API', 'GitHub Actions'],
+    url: 'https://github.com/mavila14/mungerfirebase',
+  },
+  {
+    title: '8-Bit Escape',
+    description:
+      'Terminal-based zombie escape game written in Java. Features a JSON-driven map and enemy system, ASCII art, spatial navigation, weapons (shotgun, molotov), and 8-bit sound effects. Built collaboratively with two teammates.',
+    tech: ['Java', 'JSON', 'OOP', 'ASCII Art'],
+    url: 'https://github.com/jilly-jill/8-bit-escape',
+  },
+  {
     title: 'Portfolio Website',
     description:
       'Personal portfolio site built with Next.js 15 and Tailwind CSS. Features a two-column sticky layout, mouse spotlight effect, IntersectionObserver-driven active nav, and SSR deployment on AWS Amplify.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'AWS Amplify'],
     url: 'https://michaelxanderson.com',
   },
-  // TODO: Add more projects
 ]
 
 export default function Projects() {
