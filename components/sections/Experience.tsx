@@ -4,26 +4,37 @@ const experiences = [
     title: 'Support Operations Manager',
     company: 'GreenSpark Software',
     url: 'https://www.greensparksoftware.com/',
-    description:
-      'Managed 8,800+ Intercom support conversations with a 94.1% CSAT score and 2m 30s median first response time. Owned end-to-end customer onboarding and accounting integrations via Codat across QuickBooks, Xero, and MBC. Engineered AI-powered troubleshooting tools using Claude (Anthropic). Executed large-scale data migrations using advanced Excel and Google Sheets.',
-    tech: ['Intercom', 'Claude AI', 'Codat', 'QuickBooks', 'RBAC', 'Google Sheets'],
+    bullets: [
+      'Managed 8,800+ Intercom support conversations over two years with a 94.1% CSAT score and 2m 30s median first response time, serving as the primary technical point of contact worldwide and handling the majority of all company IT and support volume.',
+      'Implemented and managed RBAC and data access controls across the platform.',
+      'Owned end-to-end account onboarding and accounting integrations via Codat, configuring and troubleshooting live connections across QuickBooks Online, QuickBooks Desktop, Xero, and MBC to ensure accurate financial data sync and platform readiness.',
+      'Engineered AI-powered troubleshooting tools using Claude (Anthropic) by authoring custom skill prompts and knowledge-base workflows, reducing resolution time on recurring issues and enabling faster, consistent responses at scale.',
+      'Executed large-scale data migrations using advanced Excel and Google Sheets to transform, clean, and restructure tens of thousands of rows of financial and operational data for ingestion into production systems.',
+    ],
+    tech: ['Intercom', 'Claude AI', 'Codat', 'QuickBooks', 'Xero', 'RBAC', 'Google Sheets'],
   },
   {
     dateRange: 'Oct 2023 — May 2024',
     title: 'Help Desk Technician II',
     company: 'Defense Health Agency',
     url: 'https://walterreed.tricare.mil/',
-    description:
-      'Provided second-level technical support at Walter Reed National Military Medical Center via face-to-face, phone, and remote access. Conducted workstation re-imaging, hardware replacement, and user training. Enforced asset management and DRMO compliance protocols.',
-    tech: ['Bomgar', 'Active Directory', 'Windows', 'Asset Management'],
+    bullets: [
+      'Provided second-level support for troubleshooting, software updates, hardware replacement, and user training at Walter Reed National Military Medical Center through face-to-face interaction, phone calls, and remote access via the Bomgar platform.',
+      'Conducted re-imaging of desktop workstations and laptops, troubleshooting issues to restore operational functionality.',
+      'Enforced asset management protocols including replacements, upgrades, and compliance with Defense Reutilization Marketing Office (DRMO) guidelines.',
+    ],
+    tech: ['Bomgar', 'Active Directory', 'Windows', 'Asset Management', 'DRMO'],
   },
   {
     dateRange: 'Jan 2022 — Aug 2023',
     title: 'Software Development Engineer Apprentice',
     company: 'Amazon',
     url: 'https://www.amazon.com/',
-    description:
-      'Migrated a Scala web service from DynamoDB to an internal key-value store, reducing developer operation load by ~35%. Built a Java backend process ingesting 50TB+ of CSV data for daily and yearly validation jobs. Developed SQL queries against AWS Redshift for reporting and managed an internal Java resource tracking tool.',
+    bullets: [
+      'Orchestrated a database migration for a Scala website from DynamoDB to an internal key-value storage solution, reducing developer operation load by ~35% and significantly accelerating scheduled processes and scalability for future growth.',
+      'Designed and implemented a critical Java backend process that ingested and transformed over 50 TB of CSVs for daily and yearly validation jobs, developing rate validation methods to prevent catastrophic failures in both the codebase and customer-facing website.',
+      'Developed intricate SQL queries against AWS Redshift for data analysis and reporting, and managed an internal Java resource tracking tool supporting a site dedicated to monitoring and evaluating internal spending performance.',
+    ],
     tech: ['Java', 'Scala', 'DynamoDB', 'AWS Redshift', 'SQL', 'AWS'],
   },
   {
@@ -31,8 +42,11 @@ const experiences = [
     title: 'Lead Systems Technician',
     company: 'United States Air Force',
     url: 'https://www.airforce.com/',
-    description:
-      'Maintained avionics, radio, and radar systems achieving 100% operational readiness. Wrote Python scripts to streamline maintenance workflows. Participated in on-call helicopter search and rescue operations. Led training for 30+ personnel on communications, navigation, and classified material handling.',
+    bullets: [
+      'Conducted wire maintenance, software reformatting, and wrote Python scripts to streamline workflows while actively participating in on-call helicopter search and rescue operations, ensuring optimal functionality and rapid response during critical missions.',
+      'Demonstrated exceptional troubleshooting skills resolving radio and radar system issues, achieving 100% operational readiness and ensuring continuous operation of aircraft avionics systems — including the handling and loading of secret cryptographic keys for multinational operations.',
+      'Provided comprehensive training to a team of over 30 personnel on Communications and Navigation principles, classified material handling, and maintenance discipline.',
+    ],
     tech: ['Python', 'Avionics', 'Cryptography', 'Systems Maintenance', 'Training'],
   },
 ]
@@ -77,8 +91,15 @@ export default function Experience() {
                   </svg>
                 </a>
               </h3>
-              <p className="mt-2 text-base leading-relaxed text-slate-400">{job.description}</p>
-              <ul className="mt-3 flex flex-wrap gap-2">
+              <ul className="mt-3 flex flex-col gap-2">
+                {job.bullets.map((b, i) => (
+                  <li key={i} className="flex gap-3 text-base leading-relaxed text-slate-400">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-400/50" />
+                    {b}
+                  </li>
+                ))}
+              </ul>
+              <ul className="mt-4 flex flex-wrap gap-2">
                 {job.tech.map((t) => (
                   <li
                     key={t}
